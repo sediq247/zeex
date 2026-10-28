@@ -1,0 +1,9 @@
+{
+  "name": "zeex-firebase-functions",
+  "private": true,
+  "description": "Zeex authenticated Firebase backend",
+  "main": "src/index.js",
+  "engines": { "node": "22" },
+  "scripts": { "lint": "node --check src/index.js", "serve": "firebase emulators:start --only functions,firestore", "deploy": "firebase deploy --only functions,firestore:rules" },
+  "dependencies": { "firebase-admin": "^13.6.0", "firebase-functions": "^6.5.0" }
+}
